@@ -21,7 +21,7 @@ resource "aws_iam_role_policy_attachment" "lambda_basic_execution" {
 
 resource "aws_iam_role_policy_attachment" "lambda_execute" {
  role       = aws_iam_role.lambda_exec_role.name
- policy_arn = "arn:aws:iam::aws:policy/AWSLambdaExecute"
+ policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
 }
 
 resource "aws_iam_role_policy_attachment" "textract_FullAccess" {
